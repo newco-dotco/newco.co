@@ -124,9 +124,7 @@ body {
     padding: 0 3px;
     width: 30px;
     height: 30px;
-    x: 0px;
-    y: 0px;
-    enable-background: new 0 0 25 25;
+   enable-background: new 0 0 25 25;
  
     g {
        stroke: #FEFEFE;
@@ -155,8 +153,6 @@ body {
  .step-backward {
     width: 18px;
     height: 18px;
-    x: 0px;
-    y: 0px;
     enable-background: new 0 0 25 25;
     margin-bottom: 5px;
  
@@ -168,8 +164,6 @@ body {
  .step-foreward {
     width: 18px;
     height: 18px;
-    x: 0px;
-    y: 0px;
     enable-background: new 0 0 25 25;
     margin-bottom: 5px;
  
@@ -179,8 +173,6 @@ body {
  }
  
  #pause {
-    x: 0px;
-    y: 0px;
     enable-background: new 0 0 25 25;
     width: 30px;
     height: 30px;
@@ -237,5 +229,4 @@ body {
    p {
      color: #2980b9;
    }
-   
-   p
+}
