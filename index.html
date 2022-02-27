@@ -2,38 +2,73 @@
 <html>
 
 <head>
-  		<title>Newco.co</title>
+		  <title>Newco.co</title>
+		  
+		  <meta charset="UTF-8">
+		  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+		  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-			<link rel="stylesheet" 
-			href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+		  
+			<link rel="stylesheet" type="text/css" href="cb.css">
+			
 			
 </head>
 
 <body>
-	<h1 style="margin-left: 2cm; margin-top: 12pt;">hi momz</h1>
-	<p style="margin-left: 2cm;">jd ini webnya emg blm gw design, jd polosan n kasar bgt WKWK. Mgkn tampilannya brantakan di beda device, cmn gw <br>
-	mo nanya aj kl konsep audio di websitenya gini gmn? Jd kl klik di design bajunya, ntar ad kluar audio player gitoeh
-	</p>
 
+	
   
+	
 	  <input type="image" src="jktdesign.jpeg"
 		width="200"
 		height="300" 
 		class="image image-outline-dark"
 		style="margin-left: 2cm;"
-		onclick="document.getElementById('music').style.display='block'">
+		onclick="document.getElementById('sk').style.display='block'">
 
-	  
+<!--ori
 <audio id="music" controls style="display:none; margin-left: 2cm;" width="600px">
 	<source src="sirihkuning.mp3" type="audio/mp3">
-	</audio>
+	</audio> -->
 
+<!--zonaujicobak-->
+<div id="sk" controls style="display:none">
 
+<audio src="sirihkuning.mp3" id="audio"></audio>
+
+<div class="music-player">
+	<h1 class="music-name">Sirih Kuning</h1>
+	<p class="artist-name">DKI Jakarta</p>
+
+	<div class="disk"></div>
+
+	<div class="song-slider">
+		<input type="range" value="0" class="seek-bar">
+		<span class="current-time">00:00</span>
+   		<span class="song-duration">00:00</span>
+	</div>
+
+	<div class="controls">
+		<button class="play-btn pause">
+			<span></span>
+			<span></span>
+		</button>
+
+	</div>
+
+</div>
+
+<script src="data.js"></script>
+	<script src="cb.js"></script>
+
+</div>
 
 </body>
 
 </html>
-
-
-
