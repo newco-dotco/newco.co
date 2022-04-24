@@ -10,6 +10,7 @@ const currentTime = document.querySelector('.current-time');
 const musicDuration = document.querySelector('.song-duration');
 const playBtn = document.querySelector('.play-btn');
 
+
 playBtn.addEventListener('click', () => {
     if(playBtn.className.includes('pause')){
         music.play();
